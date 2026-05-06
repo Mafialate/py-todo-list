@@ -21,7 +21,7 @@ A clean and functional Task Management web application built with **Django 6.0**
 The project uses two core models to maintain a loosely coupled architecture:
 *   **Task**: Handles content, timestamps, deadlines, and completion status.
 *   **Tag**: A separate entity allowing for flexible task categorization.
-
+* ![img.png](docs/img.png)
 
 
 ## 📦 Installation & Setup
