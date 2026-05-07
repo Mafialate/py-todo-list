@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>
+    {% block title %}{% endblock %}
+  </title>
+</head>
+<body>
+  <div class="row">
+    <div class="sidebar col-3 p-3">
+      <div class="list-group">
+        <a href="{% url 'todo_list:task-list' %}"
+           class="list-group-item list-group-item-action py-3">
+           <span class="fs-4 text-primary">Home</span>
+        </a>
+        <a href="{% url 'todo_list:tag-list' %}"
+           class="list-group-item list-group-item-action py-3">
+           <span class="fs-4 text-primary">Tags</span>
+        </a>
+      </div>
+    </div>
+    <div class="content col-9">
+      {% block content %}{% endblock %}
+    </div>
+  </div>
+</body>
+</html>
